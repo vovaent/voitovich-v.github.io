@@ -1,0 +1,129 @@
+.services 
+	padding: 0 0 50px
+
+	&__container
+		max-width: 1200px
+		margin: 0 auto
+
+	&__row
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+
+	&__item
+		display: flex
+		justify-content: space-between
+		flex-direction: column
+		width: 399px
+		flex: 0 1 auto
+		padding: 13px 25px 20px
+		position: relative
+		transition: 0.5s all
+
+		&-head
+			display: flex
+			justify-content: flex-start
+		
+		&:nth-child(1) 
+			& > div > div
+				&:nth-child(2) 
+					margin: 6px 0 0
+
+		&:hover
+			background-color: $main-color
+			color: #ffffff
+			
+			&:nth-child(1)
+				background-color: $main-color
+				color: #ffffff
+										
+		&:nth-child(1)
+			// & > div 
+			// 	&:nth-child(1) 
+			// 		width: 30px
+			// 		height: 58px
+			// 		background-color: $secondary-color
+			// 		mask-image: url('../img/icons/rocket_icon.png')
+			// 		mask-position: center center
+			// 		mask-repeat: no-repeat
+			.services__icon
+				width: 30px
+				height: 58px
+				background-color: $secondary-color
+				mask-image: url('../img/icons/rocket_icon.png')
+				mask-position: center center
+				mask-repeat: no-repeat
+				margin-right: 20px
+		
+		&:nth-child(2) 
+			.services__icon
+				width: 30px
+				height: 58px
+				background-color: $secondary-color
+				mask-image: url('../img/icons/mobile_icon.png')
+				mask-position: center center
+				mask-repeat: no-repeat
+				margin-right: 20px
+		
+		&:nth-child(3) 
+			.services__icon
+				width: 54px
+				height: 58px
+				background-color: $secondary-color
+				mask-image: url('../img/icons/heart_lifeline_hover_icon.png')
+				mask-position: center center
+				mask-repeat: no-repeat
+				margin-right: 20px
+
+		&:hover 
+			& > div > div
+				&:nth-child(1) 
+					background-color: #ffffff
+	
+	&__title 
+		margin: 20px 0 0
+		font-family: Parangon530C
+		font-size: 22px
+		font-weight: normal
+		font-stretch: normal
+		font-style: normal
+		line-height: 1.24
+		letter-spacing: 1.03px
+		text-align: left
+		text-transform: uppercase
+
+	&__text 
+		flex: 1 1 auto
+		font-family: PTSans-Caption
+		// font-size: 15.5px
+		font-weight: normal
+		line-height: 1.65
+		// letter-spacing: 0.78px
+		text-align: left
+		margin-top: 25px
+
+	&__g-btn-arr
+		margin-top: 25px
+
+@media screen and ( max-width: 1199px )
+	.services
+		&__title
+			font-size: 20px
+
+		&__item
+			width: 313px
+			padding-right: 15px
+			padding-left: 15px
+
+@media screen and ( max-width: 991px )
+	.services
+		&__title
+			font-size: 18px
+
+@media screen and ( max-width: 767px )
+	.services
+		&__title
+			font-size: 18px
+
+		&__item
+			width: 370px

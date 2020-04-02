@@ -1,0 +1,50 @@
+.credo
+	// min-height: 550px
+	padding: 100px 0
+	background: url('../img/credo_bg.jpg') center center/cover no-repeat
+
+	&__col
+		@include flex-grid-layout
+
+	&__title	
+		font-family: Parangon530C
+		font-size: 46px
+		font-weight: 700
+		line-height: 0.96
+		letter-spacing: 1.2px
+		text-align: center
+		color: #ffffff
+
+	&__descr
+		max-width: 1060px
+		font-size: 22px
+		line-height: 1.5
+		// letter-spacing: 1.2px
+		text-align: center
+		color: #ffffff
+		margin-top: 65px
+		
+@media screen and ( max-width: 1199px )
+	.credo
+		&__title
+			font-size: 38px
+
+		&__descr
+			font-size: 20px
+
+@media screen and ( max-width: 991px )
+	.credo
+		&__title
+			font-size: 34px
+
+		&__descr
+			font-size: 18px
+
+@media screen and ( max-width: 767px )
+	.credo
+		&__title
+			font-size: 26px
+			line-height: 1.2em
+
+		&__descr
+			font-size: 16px

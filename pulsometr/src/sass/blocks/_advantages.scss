@@ -1,0 +1,86 @@
+.advantages {
+    padding: 70px 0 78px 0;
+    background-color: #f6f6f6;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 60px;
+    }
+
+    &__item {
+        width: 250px;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        color: #0d0d0d;
+
+        span {
+            display: block;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            color: #0d0d0d;
+            margin: 38px 0 25px;
+        }
+
+        a {
+            font-weight: 500;
+            color: $main-color;
+            text-decoration: underline;
+
+            &:hover {
+                color: $main-color;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__icon {
+        display: block;
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
+
+        &_animated {
+            /* Полная запись свойств анимаций */
+            /* animation-name: heartbeat;
+            animation-duration: 1.5s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite; */
+
+            /* Сокращенная запись свойств анимаций */
+            animation: heartbeat 1.5s ease infinite;
+
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
+}
+
+/* @media */
+@media (max-width: 991px) {
+    .advantages {
+        &__item {
+            padding: 0 10px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .advantages {
+        &__wrapper {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        &__item {
+            width: 100%;
+            margin-top: 38px
+        }
+    }
+}

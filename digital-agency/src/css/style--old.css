@@ -1,0 +1,417 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Ubuntu";
+    font-weight: 400;
+    font-size: 16px;
+    color: #1a1818be;
+}
+
+.promo {
+    min-height: 970px;
+    background: url('../img/promo_bg.jpg') center center/cover no-repeat;
+    padding: 20px 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.promo__container {
+    width: 1076px;
+    margin: 0 auto;
+}
+
+.promo__top {
+    position: relative;
+    margin: 0 auto;
+}
+
+.promo__logo {
+    display: inline-block;
+    width: 150px;
+}
+
+.promo__slogan {
+    color: #ffffff;
+    font-family: "Ubuntu", Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.6px;
+    text-align: center;
+}
+
+.promo__contacts {
+    display: inline-block;
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    font-family: "Parangon530C", Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.promo__contacts span {
+    color: #f6ae48;
+    font-size: 28px;
+    ;
+}
+
+h1 {
+    margin: 110px auto 0;
+}
+
+.promo__title {
+    font-family: "Parangon530C", Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 2.4px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.promo__description {
+    font-family: "PTSans-Caption", Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+    text-align: center;
+    color: #ffffff;
+    margin: 52px auto 0;
+}
+
+.promo__btn {
+    display: block;
+    width: 313px;
+    height: 72px;
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.18);
+    border: 4px solid rgba(0, 0, 0, 0.23);
+    background-image: linear-gradient(to top, #f6ae48 0%, #f5a433 100%);
+    margin: 77px auto 0;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.22);
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+}
+
+.promo__progress {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 68px auto 0;
+}
+
+.promo__bullets {
+    width: 252px;
+    height: 160px;
+    border: 2px solid #fff;
+    text-align: center;
+    position: relative;
+    border-top: 0;
+}
+
+.promo__bullets:before,
+.promo__bullets:after {
+    position: absolute;
+    content: '';
+    width: 90px;
+    height: 2px;
+    background: #ffffff;
+    top: 0;
+}
+
+.promo__bullets:before {
+    left: 0;
+}
+
+.promo__bullets:after {
+    right: 0;
+}
+
+.promo__icon {
+    position: absolute;
+    top: -16px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.promo__numeric {
+    font-family: Parangon530C;
+    font-size: 48px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 3.5;
+    letter-spacing: 2.4px;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3px;
+    margin: auto;
+}
+
+.promo__text {
+    font-family: PTSans-Caption;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 32px;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 98px;
+    font-family: Futura;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.menu__nav li:hover {
+    color: #f6ae48;
+    cursor: pointer;
+}
+
+.menu__nav li {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #1a1818be;
+}
+
+a:link {
+    text-decoration: none;
+    /* Убирает подчеркивание для ссылок */
+    color: #1a1818be;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #1a1818be;
+}
+
+a:active {
+    text-decoration: none;
+    color: #1a1818be;
+}
+
+a:hover {
+    text-decoration: none;
+    /* Делает ссылку подчеркнутой при наведении на нее курсора */
+    color: #f6ae48;
+    /* Цвет ссылки */
+}
+
+.menu__link.active {
+    color: #f6ae48;
+}
+
+.about {
+    padding: 20px 0;
+}
+
+.about__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.about__title {
+    display: inline-block;
+    font-family: 'Ubuntu';
+    font-size: 48px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    /* line-height: 0.63; */
+    letter-spacing: 2.4px;
+    color: #000000;
+    vertical-align: middle;
+}
+
+.about__back-text {
+    display: inline-block;
+    opacity: 0.19;
+    font-family: Tahoma;
+    font-size: 340px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 17px;
+    text-align: center;
+    color: rgba(193, 193, 193, 0.8);
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.about__ghost {
+    min-height: 10px;
+}
+
+.about__text {
+    display: inline-block;
+    position: absolute;
+    width: 773px;
+    height: 139px;
+    font-family: Arial;
+    line-height: 1.5;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.8);
+    top: 140px;
+    right: 10px;
+
+}
+
+.services {
+    padding: 50px 0;
+}
+
+.services__item {
+    padding: 15px 25px;
+    position: relative;
+}
+
+.services__item:hover {
+    background-color: #f6ae48;
+    color: #ffffff;
+}
+
+.services .services__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.services__item:nth-child(1)>div:nth-child(1) {
+    width: 30px;
+    height: 58px;
+    background: url('../img/icons/rocket_icon.png') center center/cover no-repeat;
+}
+
+.services__item:nth-child(1):hover>div:nth-child(1) {
+    background: url('../img/icons/rocket_hover_icon.png') center center/cover no-repeat;
+}
+
+.services__item:nth-child(2)>div:nth-child(1) {
+    width: 28px;
+    height: 45px;
+    background: url('../img/icons/mobile_icon.png') center center/cover no-repeat;
+}
+
+.services__item:nth-child(2):hover>div:nth-child(1) {
+    background: url('../img/icons/mobile_hover_icon.png') center center/cover no-repeat;
+}
+
+.services__item:nth-child(3)>div:nth-child(1) {
+    width: 54px;
+    height: 44px;
+    background: url('../img/icons/heart_lifeline_icon.png') center center/cover no-repeat;
+}
+
+.services__item:nth-child(3):hover>div:nth-child(1) {
+    background: url('../img/icons/heart_lifeline_hover_icon.png') center center/cover no-repeat;
+}
+
+.services__title {
+    margin: 20px 0 0;
+    font-family: Arial;
+    font-size: 20.5px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.24;
+    letter-spacing: 1.03px;
+    text-align: left;
+}
+
+.services .services__item:nth-child(1)>div:nth-child(2) {
+    margin: 6px 0 0;
+}
+
+.services__text {
+    font-family: Arial;
+    font-size: 15.5px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.65;
+    letter-spacing: 0.78px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.services__price {
+    display: none;
+    margin-top: 25px;
+    padding: 10px 15px;
+    border: 2px solid #ffffff;
+}
+
+.services__arrow {
+    display: none;
+}
+
+.services__item:hover>div:nth-child(4) {
+    display: inline-block;
+}
+
+.services__item:hover>img:nth-child(5) {
+    display: inline-block;
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+}

@@ -1,0 +1,166 @@
+.contacts
+	padding: 100px 0
+	background: url('../img/contacts_bg.jpg')
+
+	&__row
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		flex-wrap: wrap
+
+	&__text
+		flex: 0 0 50%
+		// padding: 0 20px
+	
+	&__title
+		font-family: Parangon530C
+		font-size: 36px
+		font-weight: normal
+		letter-spacing: 1.2px
+		text-align: left
+		color: #ffffff
+
+	&__descr
+		width: 100%
+		max-width: 501px
+		font-size: 22px
+		font-weight: normal
+		line-height: 1.5
+		// letter-spacing: 0.9px
+		text-align: left
+		color: #ffffff
+		margin-top: 40px
+
+	&__input-group
+		display: flex
+		flex-wrap: wrap
+	
+	&__form
+		flex: 0 1 50%
+
+	&__form,
+	&__input-name,
+	&__input-phone,
+	&__input-email,
+	&__comment		
+		background: transparent
+	
+	&__input-name,
+	&__input-phone,
+	&__input-email,
+	&__comment
+		border: solid 4.4px #ffffff
+		color: #ffffff
+		padding: 10px 20px
+
+	&__input-name
+		border-right-width: 2.2px
+		border-bottom-width: 2.2px
+	
+	&__input-phone
+		border-left-width: 2.2px
+		border-bottom-width: 2.2px
+
+	&__input-name,
+	&__input-phone,
+	&__input-email
+		height: 45px
+		font-size: 18px
+		
+		&::placeholder
+			font-size: 14px
+			color: #ffffff
+
+	&__input-name,
+	&__input-phone
+		width: 50%
+	
+	&__input-email
+		flex-grow: 1
+		border-top-width: 2.2px
+		border-bottom-width: 2.2px
+	
+	&__comment
+		width: 100%
+		border-top-width: 2.2px
+		font-size: 18px
+
+		&::placeholder
+			font-size: 14px
+			color: #ffffff
+
+	&__form-footer
+		display: flex
+		justify-content: space-between
+		margin-top: 14px
+
+	&__notice	
+		font-size: 14px
+		// letter-spacing: 0.7px
+		text-align: left
+		color: #ffffff
+		width: 100%
+		max-width: 500px
+
+	&__btn
+		width: 183px
+		height: 45px
+		border-radius: 0px
+		background-color: #f6ae48
+		border: none
+		color: #ffffff
+		font-family: Parangon530C
+		font-size: 17px
+		line-height: 45px
+
+@media screen and ( max-width: 1199px )
+	.contacts
+		&__title
+			font-size: 26px
+
+		&__descr
+			font-size: 20px			
+
+		&__img			
+			width: 398px
+			height: 303px
+
+@media screen and ( max-width: 991px )
+	.contacts
+		&__btn
+			font-size: 15px
+			width: 173px
+			height: 41px
+
+@media screen and ( max-width: 767px )
+	.contacts
+		&__title
+			font-size: 20px
+
+		&__descr
+			font-size: 16px
+
+		&__text, &__form
+			flex-basis: 100%
+
+		&__form
+			margin-top: 40px
+
+		&__input-name,
+		&__input-phone
+			width: 100%
+			border: 4.4px solid
+
+			
+		
+		
+		
+
+
+@media screen and ( max-width: 575px )
+	.contacts
+		
+			
+		&__title
+			font-size: 22px
+			text-align: center

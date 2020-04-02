@@ -1,0 +1,41 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+@import 'libs/tiny-slider';
+@import 'libs/animate';
+
+* {
+  font-family: 'Museo Sans', sans-serif;
+}
+
+body {
+  line-height: 1.15;
+}
+
+@import 'blocks/container';
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/advantages';
+@import 'blocks/title';
+@import 'blocks/consultation';
+@import 'blocks/forms';
+@import 'blocks/carousel';
+@import 'blocks/catalog';
+@import 'blocks/product';
+@import 'blocks/review';
+@import 'blocks/footer';
+@import 'blocks/modal';
+@import 'blocks/pageup';
+
+/* убрать стрелки в поле input[type=”number”]: */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

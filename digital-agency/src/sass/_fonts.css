@@ -1,0 +1,49 @@
+@font-face {
+    /* название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) */
+    font-family: "Parangon530C"; 
+    /* адрес шрифта и тип */
+    src: url("../fonts/Parangon530C/Parangon530C.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: "PTSans-Caption";     
+    src: url("../fonts/PTSansCaption/PTSans-Caption.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: "PTSansCaption-Bold";     
+    src: url("../fonts/PTSansCaption/PTSansCaption-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu/Ubuntu-Regular.eot');
+    src: url('../fonts/Ubuntu/Ubuntu-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Ubuntu/Ubuntu-Regular.woff') format('woff'),
+    url('../fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu/Ubuntu-Bold.eot');
+    src: url('../fonts/Ubuntu/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Ubuntu/Ubuntu-Bold.woff') format('woff'),
+    url('../fonts/Ubuntu/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: "Futura";     
+    src: url("../fonts/Futura/Futura.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}

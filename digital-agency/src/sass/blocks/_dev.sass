@@ -1,0 +1,167 @@
+.dev
+	padding: 100px 0 50px
+
+	&__wrap
+		position: relative
+
+	&__title
+		position: relative
+		// font-size: 50px
+		line-height: 0.6
+		// letter-spacing: 2.5px
+		text-align: left
+		color: #ffffff
+		z-index: 99999
+		font-family: 'Parangon530C'
+		font-size: 46px
+		font-weight: bold
+		// color: #000000
+		// margin: 30px 95px
+		text-transform: uppercase
+	
+	&__row
+		margin: 0 -12px
+		margin-top: 67px
+		@include flex-grid-layout
+
+	&__variant	
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		// width: 363px
+		flex: 0 1 350px
+		position: relative
+		height: 316px
+		padding: 75px 35px 30px
+		margin: 10px 12px
+		z-index: 9999
+
+	&__line
+		position: absolute
+		bottom: 137px
+		width: 266px
+		border-top: none
+		color: #ffffff
+		// margin: 20px 0 47px
+		z-index: 9999
+	
+	&__variant:nth-child(1)
+		background: url('../img/list_lp.jpg') center center/cover no-repeat
+		
+		.g-btn-arr__price-btn
+			border: 2px solid $secondary-color
+			
+		.g-btn-arr__arrow:hover
+			background: url('../img/icons/arrow-right-blue.svg') center center/cover  no-repeat
+
+	&__variant:nth-child(2)
+		background: url('../img/list_ws.jpg') center center/cover no-repeat
+		
+		.g-btn-arr__price-btn
+			border: 2px solid $main-color
+
+		.g-btn-arr__arrow:hover
+			background: url('../img/icons/arrow-right-yellow.svg') center center/cover  no-repeat
+		
+
+	&__variant:nth-child(3)
+		background: url('../img/list_im.jpg') center center/cover no-repeat
+
+		.g-btn-arr__price-btn
+			border: 2px solid #66bf0d
+			
+		.g-btn-arr__arrow:hover
+			background: url('../img/icons/arrow-right-green.svg') center center/cover  no-repeat
+
+	&__variant-name
+		font-family: Parangon530C
+		font-size: 50.5px
+		font-weight: normal
+		line-height: 0.96
+		// letter-spacing: 2.53px
+		text-align: left
+		color: #ffffff
+		z-index: 9999
+
+	&__bg-img
+		position: absolute
+		width: 666px
+		height: 526px
+		left: -127px
+		top: -143px
+		background: url('../img/bg_setting.png') center center/cover no-repeat
+		z-index: 1
+		
+@media screen and ( max-width: 1199px )
+	.dev
+		&__title
+			font-size: 38px
+
+		&__descr
+			font-size: 20px
+
+		&__variant-name
+			font-size: 40px
+			line-height: 1.1
+
+		&__variant
+			flex-basis: 275px
+			margin-right: 8px
+			margin-left: 8px
+
+		&__line
+			width: 200px
+
+@media screen and ( max-width: 991px )
+	.dev
+		&__title
+			font-size: 34px
+
+		&__descr
+			font-size: 18px
+
+		&__variant-name
+			font-size: 36px			
+
+		&__variant
+			margin: 15px
+
+@media screen and ( max-width: 767px )
+	.dev
+		&__title
+			font-size: 26px
+			line-height: 1.2em
+			text-align: center
+
+		&__descr
+			font-size: 16px
+
+		&__variant-name
+			font-size: 30px
+			line-height: 1.1
+
+		&__variant
+			flex-basis: 320px
+
+		&__line
+			width: 250px
+
+		&__bg-img
+			width: 100%
+			left: 0
+			background-position-x: left
+			background-position-y: top
+			
+
+@media screen and ( max-width: 575px )
+	.dev
+		&__variant-name
+			// font-size: 30px
+			// line-height: 1.1
+
+		&__variant
+			flex-basis: 300px
+
+		&__line
+			width: 210px
+

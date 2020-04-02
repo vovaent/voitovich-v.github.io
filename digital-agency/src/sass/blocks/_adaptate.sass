@@ -1,0 +1,100 @@
+.adaptate
+	padding: 120px 0 100px
+
+	&__row
+		display: flex
+		align-items: flex-end
+		// flex-wrap: wrap
+
+	&__text
+		position: relative
+		max-width: 598px
+	
+	&__title
+		font-family: Parangon530C
+		font-size: 36px
+		font-weight: normal
+		line-height: 2
+		letter-spacing: 1.2px
+		text-align: left
+		color: #060606
+
+	&__back-title
+		position: absolute
+		font-family: Tahoma
+		font-size: 79.5px
+		font-weight: bold
+		line-height: 0.42
+		letter-spacing: 3.98px
+		text-align: left
+		color: rgba(193,193,193,.8)
+		opacity: 0.19
+		top: 12px
+		left: -59px
+
+	&__descr
+		font-size: 22px
+		line-height: 1.5
+		text-align: left
+		margin-top: 40px
+
+	&__img
+		position: absolute
+		right: 0
+		width: 676px
+		height: 432px
+		background: url('../img/macbook_pro-and-ipad-and-iphone.png') bottom right/cover no-repeat
+
+@media screen and ( max-width: 1199px )
+	.adaptate
+		&__title
+			font-size: 26px
+
+		&__back-title
+			font-size: 59px
+			left: -40px
+
+		&__descr
+			font-size: 20px
+			width: 65%
+
+		&__img			
+			width: 476px
+			height: 304px
+
+@media screen and ( max-width: 991px )
+	.adaptate
+		&__row
+			flex-direction: column
+			align-items: flex-start
+
+		&__descr
+			width: 80%
+
+		&__img
+			// position: static
+			// align-self: flex-end
+			display: none
+		
+@media screen and ( max-width: 767px )
+	.adaptate
+		&__title
+			font-size: 20px
+
+		&__back-title
+			font-size: 41px
+			left: -30px
+
+		&__descr
+			font-size: 16px
+			
+@media screen and ( max-width: 575px )
+	.adaptate
+		&__title
+			font-size: 22px
+			text-align: center
+
+		&__back-title
+			font-size: 42.5px
+			left: 7px
+			top: 27px

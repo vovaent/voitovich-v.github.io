@@ -1,0 +1,100 @@
+.about
+	padding: 100px 0
+
+	&__row
+		display: flex
+		justify-content: center
+		// align-items: center
+		flex-wrap: wrap
+		margin: 0 -100px
+	
+	&__title
+		align-self: center
+		font-family: 'Parangon530C'
+		font-size: 46px
+		font-weight: bold
+		color: #000000
+		margin: 30px 95px
+		text-transform: uppercase
+
+	&__descr			
+		max-width: 763px
+		position: relative
+		flex: 1 1 753px
+		min-height: 139px
+		font-family: PTSans-Caption
+		line-height: 1.5
+		font-size: 22px
+		// letter-spacing: 1px
+		text-align: left
+		color: rgba(0, 0, 0, 0.8)
+		margin: 30px 100px
+
+	&__back-text
+		position: absolute
+		top: 50%
+		left: -80px
+		transform: translateY(-50%)
+		opacity: 0.19
+		font-family: Tahoma
+		font-size: 340px
+		font-weight: bold
+		letter-spacing: 17px
+		text-align: center
+		color: rgba(193, 193, 193, 0.8)
+
+@media screen and ( max-width: 1199px )
+	.about
+
+		&__title
+			font-size: 38px
+
+		&__descr
+			font-size: 20px
+			
+		&__back-text
+			font-size: 300px
+
+@media screen and ( max-width: 991px )
+	.about
+		&__row
+			margin: 0
+
+		&__title
+			font-size: 34px
+
+		&__descr
+			font-size: 18px
+			margin: 30px 0
+			
+		&__back-text
+			font-size: 280px
+			left: -10px
+
+@media screen and ( max-width: 767px )
+	.about
+		&__title
+			font-size: 30px
+
+		&__descr
+			font-size: 16px
+			margin-top: 10px
+			
+		&__back-text
+			font-size: 260px
+			left: -31px
+
+@media screen and ( max-width: 575px )
+	.about
+		&__title
+			font-size: 26px
+
+		&__descr
+			font-size: 16px
+			margin-top: 10px
+			
+		&__back-text
+			font-size: 113px
+			left: 44%
+			top: -51%
+			transform: translateX(-50%)

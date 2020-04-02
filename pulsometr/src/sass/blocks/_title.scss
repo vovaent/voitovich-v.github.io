@@ -1,0 +1,51 @@
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #0d0d0d;
+    text-transform: uppercase;
+    line-height: 0.9em;
+    margin: 0;
+
+    &_left {
+        font-size: 36px;
+        line-height: 40px;
+        text-align: left;
+        color: #ffffff;
+    }
+}
+
+/* @media */
+@media (max-width: 991px) {
+    .title {
+        font-size: 26px;
+
+        &_left {
+            font-size: 30px;
+            line-height: 30px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .title {
+        font-size: 22px;
+
+        &_left {
+            font-size: 26px;
+            line-height: 26px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .title {
+        font-size: 20px;
+
+        &_center {
+            text-align: center;
+            font-size: 22px;
+            line-height: 24px;
+        }
+    }
+}
