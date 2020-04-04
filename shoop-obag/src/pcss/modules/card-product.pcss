@@ -311,16 +311,16 @@
 		margin-top: 24px;
 		li {
 			font-size: 12px;
-      font-weight: 300;
-      cursor: pointer;
-      padding-bottom: 4px;
-      margin-bottom: 12px;
-      &:not(:last-of-type) {
-  			margin-right: 25px;
-  		}
-      &.selected {
-				border-bottom: 1px solid #3c3c3c;
-      }
+			font-weight: 300;
+			cursor: pointer;
+			padding: 0 11px 4px; /* Vova */
+			margin-bottom: 12px;
+			&:not(:last-of-type) {
+					margin-right: 18px; /* Vova */
+				}
+			&.selected {
+						border-bottom: 1px solid #3c3c3c;
+			}
 		}
 	}
 	.form-client-info {
@@ -368,15 +368,15 @@
 				font-size: 12px;
 				font-weight: 400;
 				position: relative;
-  			&:after {
-  				content: '';
-  				position: absolute;
-  				bottom: 1px;
-  				left: 0;
-  				right: 0;
-  				height: 1px;
-  				background: #3c3c3c;
-  			}
+				&:after {
+					content: '';
+					position: absolute;
+					bottom: -4px;
+					left: 0;
+					right: 0;
+					height: 1px;
+					background: #3c3c3c;
+				}
 			}
 			
 			&-cell {

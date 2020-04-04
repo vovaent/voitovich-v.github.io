@@ -147,6 +147,7 @@ module.exports = {
             filename: 'whatsapp-page.html',
             template: './src/whatsapp-page.html'
         }),
+        /* Vova */
         new HtmlWebpackPlugin({
             filename: 'single-product-page--[product bundle].html',
             template: './src/single-product-page--[product bundle].html'
@@ -155,6 +156,15 @@ module.exports = {
             filename: 'single-product-page--[product bundle 02].html',
             template: './src/single-product-page--[product bundle 02].html'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'single-product-page--[product configurabile meccanismo].html',
+            template: './src/single-product-page--[product configurabile meccanismo].html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'single-product-page--[product configurabile cinturino].html',
+            template: './src/single-product-page--[product configurabile cinturino].html'
+        }),
+        /* /Vova */
         new MiniCssExtractPlugin({
             filename: 'style/app.css',
             publicPath: 'style/app.css',
