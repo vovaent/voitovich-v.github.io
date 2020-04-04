@@ -1,0 +1,139 @@
+.primary-footer {
+	border-top: 2px solid #939393;
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&--top-layout {
+		padding-top: 32px;
+		padding-bottom: 40px;
+		&-coll {
+			.title {
+				font-size: 12px;
+  			font-weight: 700;
+  			margin-bottom: 17px;
+  			color: #3c3c3c;
+			}
+			li {
+				color: #3c3c3c;
+				font-size: 12px;
+				&:not(:last-of-type) {
+					margin-bottom: 11px;
+				}
+				a {
+					color: inherit;
+				}
+			}
+		}
+	}
+	&--middle-layout {		
+		background: #3C3C3C;
+		padding: 20px 0;
+ 		/* Vova */
+		border-top:  2px solid;
+		border-color: var(--base-grey-color);
+		
+		.copyright {
+			display: flex;
+			justify-content: space-between;
+			align-items: center; 
+			margin: 0 auto;
+			text-align: left;
+			max-width: 1440px;
+			width: 100%;
+			@media (max-width: 1024px) {
+				flex-direction: column;
+				text-align: center;
+			}
+		}
+
+		.copyright--info {
+			color: var(--base-light-color); 
+			font-size: 12px;
+			order: 1;
+			@media (max-width: 1024px) {
+				order: 2;
+			}
+		}
+		
+		&.white-bg {
+			background-color: #ffffff;
+			color: #3c3c3c;
+			.copyright--info {
+			color: var(--base-grey-color);
+			}		
+		}
+
+		.copyright--icons {
+			order: 2;
+			@media (max-width: 1024px) {
+				order: 1;
+				margin-bottom: 20px;
+			}
+		
+			.copyright--icon {
+				max-width: 45px;
+				vertical-align: middle;
+				margin: 0 10px;
+			}
+		}
+		/* /Vova */
+	}
+	@media (max-width: 1024px) {
+		border-top: 0;
+		.container {
+			flex-direction: column;
+		}
+		&--top-layout {
+			background: #3C3C3C;
+			padding: 0;
+			&-coll {
+				&:not(:first-of-type) {
+					border-top: solid 1px #979797;
+				}
+				.title {
+					color: var(--base-light-color);
+					position: relative;
+					margin-bottom: 0;
+					padding: 18px 12px;
+					cursor: pointer;
+					&:after {
+						content: '';
+						width: 0;
+				    height: 0;
+				    border-left: 3px solid transparent;
+				    border-right: 3px solid transparent;
+				    border-top: 5px solid var(--base-light-color);
+				    position: absolute;
+				    right: 17px;
+				    top: 50%;
+				    transition: transform 0.2s linear;
+					}
+				}
+				ul {
+					height: 0;
+					overflow: hidden;
+					padding: 0 30px;
+				}
+				li {
+					color: var(--base-light-color);
+				}
+			}
+		}
+		&--middle-layout {
+			background: var(--base-light-color);
+			text-align: center;
+			.copyright--info {
+				color: #3c3c3c;
+			}
+		}
+	}
+	@media (max-width: 730px) {
+		&--top-layout {
+			padding: 0 10px;
+		}
+		&--middle-layout {
+			padding: 10px;
+		}
+	}
+}

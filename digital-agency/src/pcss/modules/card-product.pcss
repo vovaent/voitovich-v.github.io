@@ -1,0 +1,622 @@
+.product-page {
+	display: flex;
+	margin-top: 41px;
+	margin-bottom: 45px;
+	&--coll {
+		width: 50%;
+	}
+	.single-image-slider {
+		margin-bottom: 43px;
+	}
+	.image {
+		position: relative;
+		height: 40vw;
+		max-height: 650px;
+		min-height: 319px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+		}	
+		.view-icon {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			padding: 16px;
+			cursor: pointer;
+			img {
+				width: auto;
+				height: auto;
+			}
+		}
+	}
+	.description-content {
+		.tabs {
+			border-bottom: 1px solid #cbcbcb;
+			display: flex;
+			&-item {
+				cursor: pointer;
+				font-size: 14px;
+  			font-weight: 300;
+  			padding: 11px 0;
+  			margin-bottom: -1px;
+				&:not(:last-of-type) {
+					margin-right: 72px;
+				}
+				&.active {
+					border-bottom: 1px solid #2b2b2b;
+				}
+			}
+		}
+		.content {
+			padding: 18px 0;
+			p {
+				font-size: 12px;
+				font-weight: 300; /* Vova */
+				color: var(--base-gray-text);
+				line-height: 1.6;
+			}
+		}
+	}
+	.rating-block {
+		display: flex;
+		align-items: center;
+		.rating-index {
+			display: flex;
+			&--item {
+				margin: 0 2px;
+				padding-top: 2px;
+				svg {
+					fill: #D8D8D8;
+				}
+			}
+			&.rating-one {
+				.rating-index--item {
+					&:nth-child(1) {
+						svg {
+							fill: #FFC837;
+						}
+					}
+				}
+			}
+			&.rating-two {
+				.rating-index--item {
+					&:nth-child(-n+2) {
+						svg {
+							fill: #FFC837;
+						}
+					}
+				}
+			}
+			&.rating-three {
+				.rating-index--item {
+					&:nth-child(-n+3) {
+						svg {
+							fill: #FFC837;
+						}
+					}
+				}
+			}
+			&.rating-four {
+				.rating-index--item {
+					&:nth-child(-n+4) {
+						svg {
+							fill: #FFC837;
+						}
+					}
+				}
+			}
+			&.rating-five {
+				.rating-index--item {
+					&:nth-child(-n+5) {
+						svg {
+							fill: #FFC837;
+						}
+					}
+				}
+			}
+		}
+		.default-text {
+			margin-left: 8px;
+			color: #8c8c8c;
+		}
+	}
+	.inner {
+		max-width: 410px;
+		padding-left: 60px;
+    margin: 0 auto;
+    color: var(--base-gray-text);
+	}
+	.default-text {
+		font-size: 12px;
+		font-weight: 300;
+		line-height: 1.5;
+		&.id-product {
+			margin-bottom: 8px;
+		}
+		&.bold {
+			font-weight: 600;
+		}
+	}
+	.name-product {
+		font-size: 16px;
+		font-weight: 400;
+		margin-bottom: 13px;
+	}
+
+	/* #Vova */
+	.note {		
+		font-size: 12px;
+		font-weight: 300;	
+		line-height: 1.67;	
+		color: #3c3c3c;
+		margin-top: 24px
+	}
+
+	.composition-product {
+		padding-top: 33px;
+	}
+	
+	.composition-product--title {
+		font-size: 14px;
+		font-weight: 300;		
+		line-height: 1.64;
+		color: #000000;		
+	}
+
+	.composition-product--list {
+		margin-top: 24px;			
+	}
+
+	.composition-product--item {
+		position: relative;
+		font-size: 12px;
+		font-weight: 300;		
+		line-height: 2;		
+		color: #000000;
+		padding-left: 30px;
+		margin-bottom: 10px;
+
+		.green-checkmark {	
+				position: absolute;	
+				left: 0px;
+				top: 5px;	
+			}
+		}
+	
+
+	.product-selection {
+		padding-top: 16px
+	}
+
+	/* .product-selection--img {
+	} */
+
+	.product-selection--wrap-select {
+		position: relative;
+		padding: 10px 8px;
+		border: 1px solid var(--base-gray-text);
+	}
+
+	.product-selection--select {		
+		width: 100%;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		outline: none;
+		height: auto;
+		border: none;
+		font-size: 12px;
+		font-weight: 300;
+	}
+
+	.product-selection--arrow {
+		position: absolute;
+		right: 8px;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 7px;			
+		transform: translateY(-50%) rotate(0deg);
+		transition: all .27s ease-in-out;
+
+		&.open {
+			transform: translateY(-50%) rotate(-180deg);
+		}
+	}
+
+	.product-selection--option {
+		font-size: 12px;
+		font-weight: 300;		
+		line-height: 2;		
+		color: #000000;
+	}
+	/* // #Vova */
+
+	.price {
+		font-size: 16px;
+		margin: 22px 0 9px;
+		strike {
+			color: #9c9c9c;
+			font-size: 12px;
+			margin-right: 6px;
+			font-weight: 200;
+		}
+		.discount {
+			color: #F598A4;
+			font-weight: 600;
+			margin-left: 6px;
+		}
+	}
+	.product-color {
+		margin-top: 35px;
+	}
+	.select-color {
+		display: flex;
+		margin-top: 23px;
+		&--item {
+			width: 18px;
+  		height: 18px;
+  		border-radius: 50%;
+  		position: relative;
+  		margin-bottom: 16px;
+  		cursor: pointer;
+  		&:not(:last-of-type) {
+  			margin-right: 16px;
+  		}
+  		&:before {
+  			content: '';
+  			width: 24px;
+  			height: 24px;
+  			border: 1px solid #3c3c3c;
+  			position: absolute;
+  			top: -4px;
+  			left: -4px;
+  			border-radius: inherit;
+  			display: none;
+  		}
+  		&.selected {
+				&:before {
+					display: block;
+				}
+  		}
+		}
+	}
+	.product-size {
+		p {
+			font-size: 12px;
+  		font-weight: 400;
+  		color: #3c3c3c;
+  		a {
+  			font-weight: 300;
+  			position: relative;
+  			&:after {
+  				content: '';
+  				position: absolute;
+  				bottom: 1px;
+  				left: 0;
+  				right: 0;
+  				height: 1px;
+  				background: #3c3c3c;
+  			}
+  		}
+		}
+	}
+	.product-size {
+		margin-top: 19px;
+	}
+	.select-size {
+		display: flex;
+		margin-top: 24px;
+		li {
+			font-size: 12px;
+			font-weight: 300;
+			cursor: pointer;
+			padding: 0 11px 4px; /* Vova */
+			margin-bottom: 12px;
+			&:not(:last-of-type) {
+					margin-right: 18px; /* Vova */
+				}
+			&.selected {
+						border-bottom: 1px solid #3c3c3c;
+			}
+		}
+	}
+	.form-client-info {
+		margin-top: 21px;
+		margin-bottom: 29px;
+		input,
+		textarea {
+			&:not(.btn) {
+				width: 100%;
+				border: solid 1px #3b3b3b;
+				outline: none;
+				font-size: 12px;
+				color: var(--base-gray-text);
+				padding: 7px;
+			}
+		}
+		.label {
+			font-size: 12px;
+			margin-bottom: 5px;
+		}
+		.wrap-input {
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 18px;
+			align-items: center;
+			justify-content: space-between;
+			max-width: 350px;
+		
+		/*  Vova */
+		.btn.dark-type {
+			min-width: 146px;
+			margin-left: 12px;
+
+			@media (max-width: 1023px) {
+					margin-left: 0;
+					margin-top: 12px;	
+			}
+		}
+		/* /Vova */
+
+			.wishes {
+				margin-left: 0;
+			}
+			a {
+				font-size: 12px;
+				font-weight: 400;
+				position: relative;
+				&:after {
+					content: '';
+					position: absolute;
+					bottom: -4px;
+					left: 0;
+					right: 0;
+					height: 1px;
+					background: #3c3c3c;
+				}
+			}
+			
+			&-cell {
+				width: 50%;
+				margin-bottom: 17px;
+				&:nth-child(odd) {
+					padding-right: 6px;
+				}
+				&:nth-child(even) {
+					padding-left: 6px;
+				}
+			}
+		}
+		.quantity {
+			font-size: 12px;
+			display: flex;
+			align-items: center;
+			margin: 30px 0;
+			&-input {
+				position: relative;
+				width: 75px;
+				margin-left: 9px;
+				input {
+					border-radius: 15px;
+					padding: 7px 23px 7px 12px;
+				}
+			}
+			.switch {
+				position: absolute;
+				right: 0;
+				top: 6px;
+				padding: 0 10px;
+				&-button {
+					cursor: pointer;
+					width: 10px;
+					height: 8px;
+					&:before {
+						border-style: solid;
+						border-width: 1px 1px 0 0;
+						content: '';
+						display: inline-block;
+						height: 0.45em;
+						left: 0.15em;
+						position: relative;
+						top: 0.15em;
+						transform: rotate(-45deg);
+						vertical-align: top;
+						width: 0.45em;
+					}
+					&.upwards {
+						margin-bottom: 1px;
+						/* &:before {
+
+						} */ /* Vova */
+					}
+					&.under {
+						&:before {
+							top: 0;
+							transform: rotate(135deg);
+						}
+					}
+				}
+			}
+		}
+		.dark-bg {
+			min-width: 190px;
+		}
+		.wishes {
+			display: flex;
+			align-items: center;
+			font-size: 12px;
+			margin-left: 22px;
+			cursor: pointer;
+			span {
+				font-weight: 300; /* Vova */
+			}
+		}
+		.icon-heart {
+			margin-right: 8px;
+			img {
+				width: auto;
+				height: auto;
+			}
+		}  
+	}
+	.text-block {		
+		border-top: 1px solid #cbcbcb;
+		border-bottom: 1px solid #cbcbcb;
+		padding: 10px 0 5px;
+		margin-top: -1px;
+		//margin-top: 29px;
+		&--title {
+			position: relative;
+			font-size: 12px;
+			cursor: pointer;
+			margin-bottom: 3px;
+			/* &:after {
+				content: '';
+				width: 0;
+				height: 0;
+				border-left: 2px solid transparent;
+				border-right: 2px solid transparent;
+				border-bottom: 5px solid #3c3c3c;
+				position: absolute;
+				right: 15px;
+				top: 1px;
+			} */ /* Vova */
+		}
+
+		/* Vova */
+		&--arrow {
+			position: absolute;
+			right: 8px;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 7px;			
+			transform: translateY(-50%) rotate(0deg);
+			transition: all .27s ease-in-out;
+
+			&.open {
+				transform: translateY(-50%) rotate(-180deg);
+			}
+		}
+		/* /Vova */
+
+		&--text {
+			display: none;
+			color: #3c3c3c;
+			font-size: 11px;
+			font-weight: 300;
+			line-height: 1.6;
+			span {
+				font-weight: 600;
+			}
+
+			&.open {
+				display: block;
+			}
+		}
+	}
+	.slick-dots {
+		display: flex;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 30px;
+		li {
+			margin: 0 4px;
+			cursor: pointer;
+			button {
+				font-size: 0;
+				color: transparent;
+				border: 0;
+				outline: none;
+				width: 50px;
+  			height: 2px;
+  			background: #d8d8d8;
+  			cursor: pointer;
+			}
+			&.slick-active {
+				button {
+					background: #3b3b3b;
+				}
+			}
+		}
+	}
+	.brands-slider {
+		margin-top: 45px;
+		&--item {
+			height: 143px;
+			position: relative;
+			display: flex !important;
+			padding: 10px 35px;
+			align-items: center;
+			.image_bg {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			.content {
+				position: relative;
+				z-index: 1;
+				color: #fff;
+				max-width: 60%;
+				p {
+					font-size: 12px;
+  				font-weight: 400;
+  				line-height: 1.25;
+				}
+				.btn {
+					padding: 9px;
+					margin-top: 12px;
+				}
+			}
+		}
+		.slick-arrow {
+			background: #ECECEC;
+			&.slick-prev {
+				left: -35px;
+			}
+			&.slick-next {
+				right: -35px;
+			}
+		}
+	}
+	@media (max-width: 1024px) {
+		.brands-slider {
+			padding: 0 30px;
+			.slick-arrow {
+				&.slick-next {
+					right: 0;
+				}
+				&.slick-prev {
+					left: 0;
+				}
+			}
+		}
+	}
+	@media (max-width: 730px) {
+		flex-direction: column;
+		margin-top: 24px;
+		.single-image-slider {
+			margin-bottom: 0;
+		}
+		&--coll {
+			width: 100%;
+		}
+		.description-content {
+			display: none;
+		}
+		.inner {
+			max-width: none;
+			padding: 30px 20px;						
+		}
+	}
+}
